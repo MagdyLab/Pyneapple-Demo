@@ -1,0 +1,182 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.api-params {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  align-items: stretch; /* Make sure items stretch to fill the container */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+}
+
+.parameter-input {
+  width: 100%; /* This will ensure the width of the input is consistent */
+  padding: 2px;
+  font-size: 14px;
+  box-sizing: border-box; /* This includes padding and border in the element's total width and height */
+}
+
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(0, 128, 0, 0.5), rgba(173, 255, 47, 0.5), rgba(255, 255, 0, 0.5), rgba(64, 224, 208, 0.5), rgba(173, 255, 47, 0.5));
+  color: white;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+
+.logo {
+  height: 10vmin;
+  background-image: linear-gradient(45deg, #00ff00, #ffff00, #1e90ff);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.app-title {
+  font-size: calc(12px + 1vmin);
+}
+
+.app-body {
+  position: relative;
+  display: flex;
+  height: calc(100% - 60px);
+  width: 100%;
+  z-index: 2;
+}
+
+.left-panel {
+  position: absolute;
+  width: 300px;
+  height: 1400px;
+  font-size: 15px;
+  padding: 25px;
+  color: #333; /* Change from white to dark grey */
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 3;
+}
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1450px;
+  width: 100%;
+  z-index: 1;
+}
+
+#mapid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select-container, .button-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.custom-select, .custom-button {
+  margin-top: 5px;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+}
+.maps-container {
+  position: absolute;
+}
+
+
+/* Add some basic styling for the toggle button */
+.show-panel-button {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  padding: 3px;
+  cursor: pointer;
+  transform: translateY(-50%);
+   z-index: 4;
+}
+
+/* Add some styling to the toggle button */
+.show-panel-button span {
+  font-size: 18px;
+}
+
+/* Add a transition for smooth animation */
+.left-panel {
+  transition: left 1s ease-in-out;
+}
+
+/* Add a class to shift the map to the right when the panel is visible */
+.map-container.panel-visible {
+  margin-left: 3000px; /* Adjust the margin as needed */
+  transition: margin-left 1s ease-in-out;
+}
