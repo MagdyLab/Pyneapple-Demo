@@ -63,7 +63,7 @@ Developed by Siddhant
 
 ### Starting the frontend
 
-Install the required frontend dependencies by first navigating to the frontend folder, and installing the required frontend dependencies using
+Install the required frontend dependencies by first navigating to the frontend folder, and go to "frontend/gpt_frontend" install the required frontend dependencies using
 
 ```
 $ npm install
@@ -122,14 +122,11 @@ The Pyneapple App is designed to demonstrate different algorithms and visualizat
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/akashbilgi/Pyneapple.git
-   ```
 
 2. Navigate to the frontend directory:
 
    ```bash
-   cd Pyneapple/frontend
+   cd Pyneapple/frontend/query_frontend
    ```
 
 3. Install dependencies:
