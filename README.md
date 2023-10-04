@@ -35,7 +35,7 @@ We are utilizing the power of poetry, a dependency management toolkit for python
 ```
 $ pip install poetry
 ```
-Once poetry is installed, navigate to the root directory of this project. Note that the project file already consist of the pyproject.toml file which indicates all the required dependencies and their version constraints. Next,
+Once poetry is installed, navigate to the root directory of this project. Note that the project file already consist of the pyproject.toml file which indicates all the required dependencies and their version constraints. Next go to localhost directory and,
 
 ```
 $ poetry install
