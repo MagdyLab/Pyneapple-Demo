@@ -136,8 +136,11 @@ The Pyneapple App is designed to demonstrate different algorithms and visualizat
    ```
 
 ### Usage
-
-1. Start the development server:
+1. Start the file server for the shp files, go to the /testData folder and run the following command:
+  ```bash
+   python pyserv.py
+   ```
+2. Start the development server:
 
    ```bash
    npm start
@@ -145,7 +148,7 @@ The Pyneapple App is designed to demonstrate different algorithms and visualizat
 
    This will launch the app in your browser at `http://localhost:3000`.
 
-2. Use the app to select files, algorithms, adjust parameters, and view visualizations.
+3. Use the app to select files, algorithms, adjust parameters, and view visualizations.
 
 ### Contributing
 
